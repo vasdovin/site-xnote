@@ -1,0 +1,53 @@
+.nav-item.selected {
+    background-color: #ee605f;
+}
+
+.wrapper {
+    color: #353b4b;
+}
+
+.box {
+    background-color: #fcfdff;
+    border-color: #353b4b;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #ee605f;
+}
+
+.box.selected {
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6);
+}
+
+.required {
+    color: #ee605f;
+}
+
+textarea,
+input {
+	border-color: #353b4b;
+}
+
+.form-successfully.error {
+    color: #ee605f;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ee605f;
+}
+
+input[type="submit"] {
+    background-color: #ee605f;
+    color: white;
+}
+
+.navigation-container {
+    background-color: #353b4b;
+    color: white;
+}
+
+.box-privacy {
+    border-color: #353b4b;
+}

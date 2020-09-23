@@ -1,0 +1,154 @@
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+h1, h3 {
+	font-size: 2.2em;
+}
+
+h2, h4 {
+	font-size: 1.2em;
+}
+
+.wrapper {
+	font-family: 'Roboto', sans-serif;
+	background-image: url("../assets/background.jpg");
+	background-position: 0 0;
+	background-size: 130%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.canvas-container {
+	-webkit-overflow-scrolling: touch;
+}
+
+.box {
+	border-style: solid;
+	font-size: 1em;
+	line-height: 1.8em;
+	border-width: 2px;
+	transition-property: border-color, box-shadow;
+	transition-duration: 300ms;
+}
+
+.nav-item {
+	display: block;
+	cursor: pointer;
+	transition: background-color 300ms;
+	line-height: 2em;
+	padding: 0 20px;
+}
+
+.form-container {
+	transition: opacity 300ms;
+	opacity: 1;
+}
+
+.form-container.hidden {
+	opacity: 0;
+}
+
+.form-successfully,
+.form-is-loading {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 300ms;
+}
+
+.form-successfully.initial,
+.form-is-loading.initial {
+	opacity: 1;
+	visibility: initial;
+}
+
+.form-is-loading {
+	background-image: url("../assets/spinner.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+textarea:active,
+textarea:focus,
+input:active,
+input:focus {
+	outline: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input,
+textarea {
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 0;
+	transition-property: border-color;
+	transition-duration: 300ms;
+	font-size: 1em;
+	font-weight: 400;
+	padding: 8px;
+	box-shadow: none;
+	appearance: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="submit"] {
+    border-width: 0;
+}
+
+label {
+	font-size: 0.8em;
+    font-weight: 700;
+}
+
+.box-privacy {
+    border-style: solid;
+}
+
+.box-privacy h1,
+.box-privacy h2,
+.box-privacy h3,
+.box-privacy h4,
+.box-privacy h5,
+.box-privacy h6 {
+	text-align: left;
+}
+
+.is-loading {
+	background-color: white;
+    background-image: url("../assets/spinner.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: opacity 3000ms;
+}
+.is-loading.hidden {
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.wrapper {
+		background-image: url("../assets/background-tablet.jpg");
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	.wrapper {
+		background-image: url("../assets/background-phone.jpg");
+		background-size: auto 130%;
+	}
+}
